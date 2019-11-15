@@ -1,6 +1,6 @@
 <project version="2.0">
-   <asynRes>img,temp,sound                                 </asynRes>
-   <unDealRes>embed                                 </unDealRes>
+   <asynRes>img,temp,sound                                    </asynRes>
+   <unDealRes>embed                                    </unDealRes>
    <resTypes>png,jpg   </resTypes>
    <resExportPath>bin/res/atlas   </resExportPath>
    <asynResExportPath>bin   </asynResExportPath>
@@ -15,7 +15,7 @@ var Dialog=laya.ui.Dialog;]]>   </codeImportsJS>
    <shareResPath/>
    <codeType>1   </codeType>
    <resCanCompress/>
-   <resPublishQuality>80                                 </resPublishQuality>
+   <resPublishQuality>80                                    </resPublishQuality>
    <langPath/>
    <defaultFont/>
    <codeImportsTS><![CDATA[import View=Laya.View;
@@ -29,12 +29,12 @@ import Scene=Laya.Scene;]]>   </codeImportsTS>
    <trimempty>true   </trimempty>
    <startScene/>
    <engineType>2D   </engineType>
-   <scaleMode>fixedwidth   </scaleMode>
+   <scaleMode>fixedheight   </scaleMode>
    <screenMode>none   </screenMode>
    <alignV>top   </alignV>
    <alignH>left   </alignH>
-   <designWidth>640   </designWidth>
-   <designHeight>1136   </designHeight>
+   <designWidth>960   </designWidth>
+   <designHeight>640   </designHeight>
    <codeViewExportPath>src/view   </codeViewExportPath>
    <picType>0   </picType>
    <atlasType>1   </atlasType>
@@ -45,7 +45,7 @@ import Scene=Laya.Scene;]]>   </codeImportsTS>
    <isRemoteProject>false   </isRemoteProject>
    <idePath/>
    <ver>2.0   </ver>
-   <stat>false   </stat>
+   <stat>true   </stat>
    <physicsDebug>false   </physicsDebug>
    <toJsonScene>true   </toJsonScene>
    <compressTexture>false   </compressTexture>

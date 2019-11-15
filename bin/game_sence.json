@@ -1,0 +1,1 @@
+{"type":"Scene","props":{"width":960,"name":"game_sence","height":640},"compId":2,"child":[{"type":"Script","props":{"top":0,"right":0,"left":0,"bottom":0,"runtime":"laya.ui.Widget"},"compId":3},{"type":"Script","props":{"runtime":"game/game_mgr.ts"},"compId":4}],"loadList":[],"loadList3D":[]}

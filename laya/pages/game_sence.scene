@@ -2,11 +2,11 @@
     "x":0,
     "type":"Scene",
     "selectedBox":2,
-    "selecteID":3,
+    "selecteID":19,
     "searchKey":"Scene,game_sence",
     "props":{"width":960,"sceneColor":"#000000","name":"game_sence","height":640},
     "nodeParent":-1,
-    "maxID":5,
+    "maxID":25,
     "label":"game_sence",
     "isOpen":true,
     "isDirectory":true,
@@ -37,7 +37,7 @@
             "source":"src/game/game_mgr.ts",
             "searchKey":"Script,game_mgr",
             "removeAble":true,
-            "props":{},
+            "props":{"mouseRoot":"@node:20","mousePrefab":"@Prefab:prefabs/mouse.prefab"},
             "nodeParent":2,
             "label":"game_mgr",
             "isDirectory":false,
@@ -46,12 +46,117 @@
             "compId":4,
             "child":[
                 ]
+        },
+        {
+            "x":15,
+            "type":"Sprite",
+            "searchKey":"Sprite,Canvas",
+            "props":{"y":316,"x":476,"width":8,"name":"Canvas","height":8},
+            "nodeParent":2,
+            "label":"Canvas",
+            "isOpen":true,
+            "isDirectory":true,
+            "isAniNode":true,
+            "hasChild":true,
+            "compId":8,
+            "child":[
+                {
+                    "x":30,
+                    "type":"Widget",
+                    "switchAble":true,
+                    "searchKey":"Widget",
+                    "removeAble":true,
+                    "props":{"centerY":0,"centerX":0},
+                    "nodeParent":8,
+                    "label":"Widget",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":13,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,bg",
+                    "props":{"y":-271,"x":-371,"texture":"res/back.png","name":"bg"},
+                    "nodeParent":8,
+                    "label":"bg",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":19,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,mouse_root",
+                    "props":{"y":-4,"x":-4,"name":"mouse_root"},
+                    "nodeParent":8,
+                    "label":"mouse_root",
+                    "isOpen":true,
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":20,
+                    "child":[
+                        ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,hammer",
+                    "props":{"y":67,"x":84,"width":98,"texture":"res/hammer.png","rotation":-2,"pivotY":67,"pivotX":84,"name":"hammer","height":77},
+                    "nodeParent":8,
+                    "label":"hammer",
+                    "isOpen":null,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":23,
+                    "child":[
+                        {
+                            "type":"Script",
+                            "switchAble":true,
+                            "source":"src/game/hammer.ts",
+                            "searchKey":"Script,hammer",
+                            "removeAble":true,
+                            "props":{},
+                            "nodeParent":23,
+                            "label":"hammer",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":24,
+                            "child":[
+                                ]
+                        }]
+                }]
         }],
     "animations":[
         {
             "nodes":[
                 ],
             "name":"ani1",
+            "id":1,
+            "frameRate":24,
+            "action":0
+        },
+        {
+            "nodes":[
+                ],
+            "name":"ani1_0",
+            "id":1,
+            "frameRate":24,
+            "action":0
+        },
+        {
+            "nodes":[
+                ],
+            "name":"ani1_0_0",
             "id":1,
             "frameRate":24,
             "action":0

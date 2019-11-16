@@ -1,0 +1,6 @@
+{
+  "code": "export default class game_mgr extends Laya.Script {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.mousePrefab = null;\r\n        this.mouseRoot = null;\r\n    }\r\n    onStart() {\r\n        this.generatorOneMouse();\r\n    }\r\n    onUpdate() {\r\n        console.log(`w: ${this.owner.width} h: ${this.owner.height}`);\r\n    }\r\n    generatorOneMouse() {\r\n        const mouse = this.mousePrefab.create();\r\n        this.mouseRoot.addChildren(mouse);\r\n        Laya.timer.once(Math.floor(Math.random() * 1000 * 2 + 2), this, this.generatorOneMouse);\r\n    }\r\n}\r\n",
+  "references": [
+    "/Users/suqin/Documents/code/laya_hitmouse/src/game/mouse.ts"
+  ]
+}

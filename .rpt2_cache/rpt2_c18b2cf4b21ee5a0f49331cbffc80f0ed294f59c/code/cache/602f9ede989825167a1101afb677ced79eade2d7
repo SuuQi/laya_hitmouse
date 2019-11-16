@@ -1,0 +1,4 @@
+{
+  "code": "export var MOUSE_TYPE;\r\n(function (MOUSE_TYPE) {\r\n    MOUSE_TYPE[MOUSE_TYPE[\"BLUE\"] = 1] = \"BLUE\";\r\n    MOUSE_TYPE[MOUSE_TYPE[\"BROWN\"] = 2] = \"BROWN\";\r\n})(MOUSE_TYPE || (MOUSE_TYPE = {}));\r\nexport const MOUSE_SKIN = {\r\n    [MOUSE_TYPE.BLUE]: `res/mouse_normal_${MOUSE_TYPE.BLUE}.png`,\r\n    [MOUSE_TYPE.BROWN]: `res/mouse_normal_${MOUSE_TYPE.BROWN}.png`,\r\n};\r\nexport default class mouse extends Laya.Script {\r\n    constructor() {\r\n        super(...arguments);\r\n        this.mouseType = MOUSE_TYPE.BLUE;\r\n    }\r\n    onStart() {\r\n        this.showAnimation(this.mouseType);\r\n    }\r\n    showAnimation(type) {\r\n        this.mouseType = type;\r\n        this.owner.skin = MOUSE_SKIN[this.mouseType];\r\n        this.owner.scale(0, 0, true);\r\n        const tl = Laya.TimeLine\r\n            .to(this.owner, { scaleX: 1, scaleY: 1 }, 1000)\r\n            .play();\r\n    }\r\n}\r\n",
+  "references": []
+}

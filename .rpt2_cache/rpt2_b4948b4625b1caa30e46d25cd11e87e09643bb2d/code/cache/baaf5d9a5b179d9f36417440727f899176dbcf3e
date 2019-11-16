@@ -1,0 +1,4 @@
+{
+  "code": "export default class game_mgr extends Laya.Script {\r\n    onEnable() {\r\n    }\r\n    onDisable() {\r\n    }\r\n    onUpdate() {\r\n        console.log(`w: ${this.owner.width} h: ${this.owner.height}`);\r\n    }\r\n}\r\n",
+  "references": []
+}

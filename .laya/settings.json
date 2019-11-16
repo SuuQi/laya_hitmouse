@@ -1,2 +1,4 @@
 {
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all"
 }

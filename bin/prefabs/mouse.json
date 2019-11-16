@@ -1,0 +1,1 @@
+{"type":"Image","props":{"skin":"res/mouse_normal_2.png","name":"mouse","anchorX":0.5,"x":0,"anchorY":0.5,"y":0,"presetID":1,"isPresetRoot":true},"compId":21,"child":[{"type":"Script","props":{"enabled":true,"mouseType":2,"presetID":2,"runtime":"game/mouse.ts"},"compId":22}],"loadList":["res/mouse_normal_2.png"],"loadList3D":[]}
